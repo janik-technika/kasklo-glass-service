@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Navigation } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -70,33 +70,6 @@ const Contact = () => {
                 <a href="tel:+420777073754" className="flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />
                   Zavolat
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-secondary hover:bg-secondary/90"
-                asChild
-              >
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Jasenická+1654,+Vsetín" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <Navigation className="w-5 h-5" />
-                  Navigovat na adresu
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-secondary hover:bg-secondary/90"
-                asChild
-              >
-                <a href="mailto:auto.skla@centrum.cz" className="flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Napsat e-mail
                 </a>
               </Button>
             </div>
