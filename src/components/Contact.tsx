@@ -72,6 +72,16 @@ const Contact = () => {
                   Zavolat
                 </a>
               </Button>
+              <Button 
+                size="lg" 
+                variant="secondary"
+                asChild
+              >
+                <a href="mailto:auto.skla@centrum.cz" className="flex items-center justify-center gap-2">
+                  <Mail className="w-5 h-5" />
+                  Napsat e-mail
+                </a>
+              </Button>
             </div>
           </Card>
         </div>
