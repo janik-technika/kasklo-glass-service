@@ -4,8 +4,10 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "#sluzby", label: "Služby" },
+  { href: "#opravy", label: "Opravy" },
+  { href: "#mobilni-servis", label: "Mobilní servis" },
   { href: "#pojisteni", label: "Pojištění" },
-  { href: "#galerie", label: "Galerie" },
+  { href: "#reference", label: "Reference" },
   { href: "#kontakt", label: "Kontakt" },
 ];
 
