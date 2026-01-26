@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#opravy", label: "Opravy" },
   { href: "#mobilni-servis", label: "Mobilní servis" },
   { href: "#pojisteni", label: "Pojištění" },
-  { href: "#reference", label: "Reference" },
   { href: "#kontakt", label: "Kontakt" },
 ];
 

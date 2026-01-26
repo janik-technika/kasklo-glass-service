@@ -4,7 +4,6 @@ import Services from "@/components/Services";
 import RepairInfo from "@/components/RepairInfo";
 import MobileService from "@/components/MobileService";
 import InsuranceInfo from "@/components/InsuranceInfo";
-import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -18,7 +17,6 @@ const Index = () => {
       <RepairInfo />
       <MobileService />
       <InsuranceInfo />
-      <Testimonials />
       <Gallery />
       <Contact />
       <Footer />
