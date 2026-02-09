@@ -1,4 +1,12 @@
 import { Card } from "@/components/ui/card";
+import galleryNew1 from "@/assets/gallery-new-1.jpg";
+import galleryNew2 from "@/assets/gallery-new-2.jpg";
+import galleryNew3 from "@/assets/gallery-new-3.jpg";
+import galleryNew4 from "@/assets/gallery-new-4.jpg";
+import galleryNew5 from "@/assets/gallery-new-5.jpg";
+import galleryNew6 from "@/assets/gallery-new-6.jpg";
+import galleryNew7 from "@/assets/gallery-new-7.jpg";
+import galleryNew8 from "@/assets/gallery-new-8.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -8,6 +16,14 @@ import gallery6 from "@/assets/gallery-6.jpg";
 
 const Gallery = () => {
   const images = [
+    { src: galleryNew1, alt: "Aplikace lepidla při výměně autoskla" },
+    { src: galleryNew2, alt: "Tesla při výměně čelního skla" },
+    { src: galleryNew3, alt: "Montáž čelního skla na Teslu" },
+    { src: galleryNew4, alt: "Přísavky při osazování autoskla" },
+    { src: galleryNew5, alt: "Firemní vozidlo AUTOSKLO" },
+    { src: galleryNew6, alt: "Normfest UV lampa pro opravu skla" },
+    { src: galleryNew7, alt: "Detail poškození skla pod lupou" },
+    { src: galleryNew8, alt: "Osazování čelního skla na Teslu" },
     { src: gallery1, alt: "Vstup do provozovny KASKLO Car" },
     { src: gallery2, alt: "Glass Medic Windshield Repair System" },
     { src: gallery3, alt: "Profesionální nářadí pro opravu autoskel" },
