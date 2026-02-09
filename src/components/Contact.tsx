@@ -1,8 +1,11 @@
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const Contact = () => {
+  const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.5!2d17.9925!3d49.3386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47134abce1f3c2ed%3A0x8c9e0a6b5d4e3f2a!2sJasenick%C3%A1%201654%2C%20755%2001%20Vset%C3%ADn!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz";
+  const navigationUrl = "https://www.google.com/maps/dir/?api=1&destination=Jasenická+1654,+75501+Vsetín,+Czech+Republic";
+
   return (
     <section id="kontakt" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
@@ -13,7 +16,7 @@ const Contact = () => {
           Jsme tu pro vás
         </p>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 p-8 md:p-12 animate-fade-in">
             <h3 className="text-3xl font-bold text-foreground mb-8">
               Kontakty KASKLO Car, s.r.o.
@@ -80,6 +83,39 @@ const Contact = () => {
                 <a href="mailto:auto.skla@centrum.cz" className="flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" />
                   Napsat e-mail
+                </a>
+              </Button>
+            </div>
+          </Card>
+
+          {/* Google Maps */}
+          <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 overflow-hidden animate-fade-in">
+            <div className="aspect-video w-full">
+              <iframe
+                src={googleMapsEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa - KASKLO Car, s.r.o., Jasenická 1654, Vsetín"
+              />
+            </div>
+            <div className="p-6">
+              <Button 
+                size="lg" 
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
+                asChild
+              >
+                <a 
+                  href={navigationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <Navigation className="w-5 h-5" />
+                  Navigovat na provozovnu
                 </a>
               </Button>
             </div>
