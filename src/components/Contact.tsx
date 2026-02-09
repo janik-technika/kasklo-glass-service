@@ -16,14 +16,13 @@ const Contact = () => {
           Jsme tu pro vás
         </p>
 
-        <div className="max-w-4xl mx-auto space-y-8">
-          <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 p-8 md:p-12 animate-fade-in">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
+          <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 p-8 md:p-10">
             <h3 className="text-3xl font-bold text-foreground mb-8">
               Kontakty KASKLO Car, s.r.o.
             </h3>
 
             <div className="space-y-6 mb-8">
-              {/* Address */}
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
@@ -34,7 +33,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
@@ -48,7 +46,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Phone */}
               <div className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
@@ -63,7 +60,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
@@ -88,9 +84,8 @@ const Contact = () => {
             </div>
           </Card>
 
-          {/* Google Maps */}
-          <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 overflow-hidden animate-fade-in">
-            <div className="aspect-video w-full">
+          <Card className="backdrop-blur-xl bg-glass/20 border-glass-border/50 overflow-hidden flex flex-col">
+            <div className="flex-1 min-h-[300px]">
               <iframe
                 src={googleMapsEmbedUrl}
                 width="100%"
