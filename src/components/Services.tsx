@@ -1,4 +1,4 @@
-import { Wrench, Car, Home, Shield, Sparkles, Package } from "lucide-react";
+import { Wrench, Car, Home, Shield, Package } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const services = [
@@ -21,11 +21,6 @@ const services = [
     icon: Shield,
     title: "Opravy autoskel",
     description: "Odborné opravy poškozených autoskel",
-  },
-  {
-    icon: Sparkles,
-    title: "Čištění interiéru",
-    description: "Ruční čištění interiéru vozu",
   },
   {
     icon: Package,
@@ -69,7 +64,7 @@ const Services = () => {
             Pojištění a vyřízení škodní události
           </h3>
           <p className="text-lg text-foreground/90 mb-4">
-            Provádíme výměnu autoskel z <strong>povinného ručení nebo připojištění</strong> – na všechny typy vozidel (osobní, nákladní, autobusové).
+            Provádíme výměnu autoskel z <strong>připojištění</strong> – na všechny typy vozidel (osobní, nákladní, autobusové).
           </p>
           <p className="text-lg text-foreground/90">
             <strong>Vyřizujeme za vás škodní událost u všech pojišťoven.</strong> Nemusíte nic řešit, stačí přistavit vozidlo.
